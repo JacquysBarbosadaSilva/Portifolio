@@ -86,8 +86,8 @@ img {
 }
 a.icon-link {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
     width: 100%;
 }
 
