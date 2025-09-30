@@ -95,6 +95,25 @@ a.icon-link p {
     font-size: 15px;
 }
 
+.contato {
+    color: white;
+    text-decoration: none;
+    background-color: #7c5cff;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.card-contatos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    /* color: white; */
+    margin-bottom: 40px;
+}
+
 :root {
     --bg: #0f1724;
     --card: #0b1220;
@@ -110,6 +129,31 @@ a.icon-link p {
     flex-direction: column;
     justify-content: center;
     width: min(820px, 95%);
+}
+
+img.badge-certificacoes {
+    width: 40%;
+    border-radius: 0;
+}
+
+.titlle-certificacoes{
+    text-align: center;
+    color: #555;
+}
+
+.certificacoes{
+    display: grid;
+    width: 80%;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.certificacoes-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -239,7 +283,7 @@ p {
 
 .project-card p {
     font-size: 15px;
-    color: black;
+    color: #555;
     opacity: 0.85;
     line-height: 1.4em;
 }
@@ -254,11 +298,11 @@ p {
         padding: 15px 20px; /* Reduz o padding lateral */
     }
 
-    h1{
+    h1 {
         margin-top: 100px;
     }
 
-    .section-title{
+    .section-title {
         margin-top: 200px;
     }
 
