@@ -1,129 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-        <title>Portifólio - Jacquys Barbosa da Silva</title>
-    </head>
-    <body>
-        <div class="container-fundo">
-            <div class="container-conteudo">
-                <nav class="navbar">
-                    <div class="nav-left">
-                        <a href="mailto:seuemail@exemplo.com" class="icon-link">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>jacquys0801@gmail.com</p>
-                        </a>
-                    </div>
-                    <div class="nav-right">
-                        <a href="#portifolio"><i class="fa-regular fa-file"></i> Projetos</a>
-                        <a href="#card"><i class="fa-solid fa-user"></i> Resume</a>
-                    </div>
-                </nav>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="theme-color" content="#FAFAFA" />
+<title>Jacquys Silva — Full Stack Developer</title>
+<meta name="description" content="Jacquys Silva — Desenvolvedor Full Stack Júnior. React, Node.js, PHP e MySQL. Portfólio de projetos e certificações." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-                <div class="card" id="card" role="region" aria-label="Exemplo de texto aparecendo letra a letra">
-                    <div class="minha-descricao">
-                        <div>
-                            <h1>Sobre mim</h1>
+<header class="site-header">
+  <div class="menu" id="menu">
+    <a href="#top" class="logo" aria-label="Jacquys — início">
+      <span class="logo-mark">jacquys<span class="dot">.</span></span>
+    </a>
+    <div class="eyes" aria-hidden="true">
+      <div class="eye left"><div><span><span></span></span></div></div>
+      <div class="eye right"><div><span><span></span></span></div></div>
+    </div>
+    <nav>
+      <div class="inner">
+        <a href="#top" class="primary home">HOME</a>
+        <a href="#projetos" class="primary">PROJETOS</a>
+        <a href="#sobre" class="primary">SOBRE</a>
+        <a href="#certs" class="primary">CERTS</a>
+        <a href="#contato" class="primary">CONTATO</a>
+      </div>
+    </nav>
+  </div>
+  <a href="mailto:jacquys0801@gmail.com" class="icon-btn yellow meeting">
+    <span class="icon">✉</span>VAMOS CONVERSAR
+  </a>
+</header>
 
-                            <p id="target" class="letra-a-letra" aria-live="polite"></p>
-                        </div>
-                        <img src="img/minha-foto.png" alt="" />
-                    </div>
-                </div>
+<main id="top">
 
-                <h2 id="portifolio" class="section-title">Meus projetos</h2>
-                <p class="section-subtitle">Projetos desenvolvidos</p>
+  <!-- INTRO -->
+  <section class="m intro" data-bg="cream">
+    <div class="intro-howdy">
+      <h5>Olá, eu sou</h5>
+    </div>
+    <h1 class="display-xxl">
+      <span class="line">Jacquys</span>
+      <span class="line">Silva<span class="period">.</span></span>
+    </h1>
+    <div class="intro-figures" aria-hidden="true">
+      <span class="blob blob-yellow"></span>
+      <span class="blob blob-purple"></span>
+      <span class="blob blob-green"></span>
+      <span class="blob blob-orange"></span>
+    </div>
+    <div class="intro-photo">
+      <img src="assets/profile-nobg.png" alt="Foto do Jacquys" draggable="false" />
+    </div>
+  </section>
 
-                <div class="portfolio">
-                    <div class="project-card">
-                        <h4>SESI Comunica</h4>
-                        <p>Plataforma de comunicação entre a escola SESI Caçapava e os responsáveis dos alunos.</p>
-                        <a class="visualizar-repositorio" href="">Visualizar repositório</a>
-                    </div>
+  <!-- PUSH TITLES (about + tagline) -->
+  <section id="sobre" class="m push-titles" data-bg="cream">
+    <div class="circular-text">
+      <p>Descrição</p>
+    </div>
+    <div class="push-line offset-r">
+      <span class="text">Full Stack</span>
+    </div>
+    <div class="push-line">
+      <span class="text">Desenvolvedor<span class="period">.</span></span>
+    </div>
 
-                    <div class="project-card">
-                        <h4>Health Guard (Landing Page)</h4>
-                        <p>Landing page para o app de monitoramento de vacinas. Conecta usuários e gestores.</p>
-                        <a class="visualizar-repositorio" href="https://nicolecafalloni.github.io/landing_page_HealthGuard/">Visualizar repositório</a>
-                    </div>
+    <p class="bio">
+      Sou <strong>Desenvolvedor Full Stack Júnior</strong>, com formação técnica concluída no SENAI.
+      Crio interfaces modernas, responsivas e acessíveis com HTML, CSS, JavaScript e React.
+      No back-end, trabalho com Node.js, PHP e MySQL — também tenho familiaridade com cloud.
+      Atualmente, curso Análise e Desenvolvimento de Sistemas e estudo cybersegurança.
+    </p>
 
-                    <div class="project-card">
-                        <h4>Olie's Sports</h4>
-                        <p>Aplicativo de e-commerce de produtos de esporte.</p>
-                        <a class="visualizar-repositorio" href="https://github.com/JacquysBarbosadaSilva/Olies-sports">Visualizar repositório.</a>
-                    </div>
+    <ul class="tech-pills">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li>
+      <li>Node.js</li><li>PHP</li><li>MySQL</li><li>Cloud</li>
+    </ul>
+  </section>
 
-                    <div class="project-card">
-                        <h4>Health Guard</h4>
-                        <p>App de monitoramento de vacinas. Conecta usuários e gestores.</p>
-                        <a class="visualizar-repositorio" href="https://github.com/victorkoba/healthguard">Visualizar repositório</a>
-                    </div>
+  <!-- PROJECTS -->
+  <section id="projetos" class="m projects" data-bg="purple">
+    <div class="section-head">
+      <span class="kicker">// trabalhos selecionados</span>
+      <h2 class="display-xl">Projetos<span class="period">.</span></h2>
+    </div>
 
-                    <div class="project-card">
-                        <h4>Site de História</h4>
-                        <p>Site com conteúdo de história solicitado por um professor de história do SESI.</p>
-                        <a class="visualizar-repositorio" href="https://github.com/victorkoba/healthguard">Visualizar repositório</a>
-                    </div>
+    <div class="project-grid">
 
-                    <div class="project-card">
-                        <h4>Site de Educação Financeira</h4>
-                        <p>Site com conteúdo de educação financeira solicitado por uma professora dematemática do SESI.</p>
-                        <a class="visualizar-repositorio" href="https://github.com/victorkoba/healthguard">Visualizar repositório</a>
-                    </div>
-                </div>
+      <article class="project-card" data-tilt>
+        <div class="project-tag">SaaS · Landing</div>
+        <h3 class="project-name">HealthGuard</h3>
+        <a class="project-cta" href="https://github.com/nicolecafalloni/landing_page_HealthGuard" target="_blank" rel="noreferrer">Ver projeto →</a>
+        <div class="project-circle"></div>
+        <img class="project-img" src="assets/HealthGuardLandingPage.png" alt="HealthGuard" />
+      </article>
 
-                <h2 id="portifolio" class="section-title">Certificações</h2>
-                <div class="certificacoes">
-                    <div class="certificacoes-cards">
-                        <h3 class="titlle-certificacoes">Introdução a Internet<br> das Coisas(IOT)</h3>
-                        <img class="badge-certificacoes" src="img/introduction-to-iot.png" alt="">
-                    </div>
+      <article class="project-card alt-2" data-tilt>
+        <div class="project-tag">React Native + Expo</div>
+        <h3 class="project-name">Olie's Sports</h3>
+        <a class="project-cta" href="https://github.com/JacquysBarbosadaSilva/Olies-sports" target="_blank" rel="noreferrer">Ver projeto →</a>
+        <div class="project-circle"></div>
+        <img class="project-img" src="assets/OliesSports.png" alt="HealthGuard" />
+      </article>
 
-                    <div class="certificacoes-cards">
-                        <h3 class="titlle-certificacoes">Javascript Essentials 1</h3>
-                        <img class="badge-certificacoes" src="img/javascript-essentials-1.png" alt="">
-                    </div>
+      <article class="project-card alt-3" data-tilt>
+        <div class="project-tag">php</div>
+        <h3 class="project-name">SESI Comunica</h3>
+        <a class="project-cta" href="https://github.com/CibelySantos/sesi_comunica" target="_blank" rel="noreferrer">Ver projeto →</a>
+        <div class="project-circle"></div>
+        <img class="project-img" src="assets/SESIComunica.png" alt="HealthGuard" />
+      </article>
 
-                    <div class="certificacoes-cards">
-                        <h3 class="titlle-certificacoes">Javascript Essentials 2</h3>
-                        <img class="badge-certificacoes" src="img/javascript-essentials-2.png" alt="">
-                    </div>
+    </div>
+  </section>
 
-                    <div class="certificacoes-cards">
-                        <h3 class="titlle-certificacoes">Python Essentials 1</h3>
-                        <img class="badge-certificacoes" src="img/python-essentials-1.1.png" alt="">
-                    </div>
+  <!-- CERTIFICATIONS -->
+  <section id="certs" class="m certifications" data-bg="cream">
+    <div class="section-head">
+      <span class="kicker">// conquistas</span>
+      <h2 class="display-xl">Certificações<span class="period">.</span></h2>
+    </div>
 
-                    <div class="certificacoes-cards">
-                        <h3 class="titlle-certificacoes">Python Essentials 2</h3>
-                        <img class="badge-certificacoes" src="img/python-essentials-2.png" alt="">
-                    </div>
+    <div class="cert-grid">
+      <article class="cert-card" data-tilt><img src="assets/introduction-to-iot.png" alt=""/><p>Introdução à Internet das Coisas</p></article>
+      <article class="cert-card" data-tilt><img src="assets/javascript-essentials-1.png" alt=""/><p>JavaScript Essentials 1</p></article>
+      <article class="cert-card" data-tilt><img src="assets/javascript-essentials-2.png" alt=""/><p>JavaScript Essentials 2</p></article>
+      <article class="cert-card" data-tilt><img src="assets/python-essentials-1.1.png" alt=""/><p>Python Essentials 1</p></article>
+      <article class="cert-card" data-tilt><img src="assets/python-essentials-2.png" alt=""/><p>Python Essentials 2</p></article>
+      <article class="cert-card" data-tilt><img src="assets/introduction-to-cybersecurity.png" alt=""/><p>Introduction to Cybersecurity</p></article>
+      <article class="cert-card" data-tilt><img src="assets/operating-systems-basics.png" alt=""/><p>Operating Systems Basics</p></article>
+      <article class="cert-card" data-tilt><img src="assets/network-support-and-security.png" alt=""/><p>Network Support and Security</p></article>
+      <article class="cert-card" data-tilt><img src="assets/linux-unhatched.png" alt=""/><p>Linux Unhatched</p></article>
+    </div>
+  </section>
 
-                    <div class="certificacoes-cards">
-                        <h3 class="titlle-certificacoes">Cibersecurity Introduction</h3>
-                        <img class="badge-certificacoes" src="img/introduction-to-cybersecurity.png" alt="">
-                    </div>
-                </div>
+  <!-- CONTACT -->
+  <section id="contato" class="m contact" data-bg="dark">
+    <div class="contact-inner">
+      <h5 class="contact-howdy">Vamos construir algo juntos?</h5>
+      <h2 class="display-xl">Fale<br>comigo<span class="period">.</span></h2>
 
-                <h2 id="portifolio" class="section-title">Contato</h2>
-                <div class="card-contatos">
-                    <div>
-                        <a class="contato" href="https://www.linkedin.com/in/jacquys-barbosa-da-silva-8498522b7/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                    </div>
+      <div class="contact-info">
+        <div class="contact-row"><span class="ic">✉</span> <a href="mailto:jacquys0801@gmail.com">jacquys0801@gmail.com</a></div>
+        <div class="contact-row-none"><span class="ic"></span><span id="local-time"></span><span class="muted"></span></div>
+      </div>
 
-                    <div>
-                        <a class="contato" href="https://github.com/JacquysBarbosadaSilva"><i class="fa-brands fa-github"></i> Git Hub</a>
-                    </div>
+      <a href="mailto:jacquys0801@gmail.com" class="icon-btn yellow big">
+        <span class="icon">✉</span>VAMOS CONVERSAR
+      </a>
 
-                    <div>
-                        <a class="contato" href="https://www.instagram.com/_jacquysbarbosa_/"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-    <script src="js/main.js"></script>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/jacquys-barbosa-da-silva-8498522b7/" target="_blank" rel="noreferrer">LINKEDIN</a></li>
+        <li><a href="https://github.com/JacquysBarbosadaSilva" target="_blank" rel="noreferrer">GITHUB</a></li>
+        <li><a href="https://www.instagram.com/_jacquysbarbosa_/" target="_blank" rel="noreferrer">INSTAGRAM</a></li>
+      </ul>
+    </div>
+
+    <div class="bigfoot" aria-hidden="true">jacquys</div>
+
+    <div class="footer-bar">
+      <span>© <span id="year"></span> Jacquys Barbosa</span>
+    </div>
+  </section>
+
+</main>
+
+<script src="main.js"></script>
+</body>
 </html>
