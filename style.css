@@ -9,6 +9,7 @@
   --yellow:#FFD948;
   --orange:#FF9C00;
   --lightpurple:#A88BFA;
+  --dark: #000;
   --midpurple:#5B21B6;
   --darkpurple:#23234A;
   --lightgreen:#95C154;
@@ -130,8 +131,8 @@ body.bg-dark .menu nav{background:var(--lightgrey);color:var(--darkink)}
   transform:skew(-14deg);background:var(--yellow);z-index:-1;
   transition:background .3s ease, transform .4s var(--back);
 }
-.icon-btn:hover{transform:translateY(-2px)}
-.icon-btn:hover::before{transform:skew(-14deg) scale(1.05)}
+/* .icon-btn:hover{transform:translateY(-2px)}
+.icon-btn:hover::before{transform:skew(-14deg) scale(1.05)} */
 .icon-btn .icon{font-size:1.4rem}
 .icon-btn.big{position:static;font-size:1.4rem;padding:18px 30px 16px}
 .icon-btn.big::before{background:var(--yellow)}
@@ -303,26 +304,28 @@ body.bg-dark .menu nav{background:var(--lightgrey);color:var(--darkink)}
   font-family:'Bowlby One SC',sans-serif;font-style:italic;
   font-weight:400;font-size:clamp(1.8rem,2.5vw,2.8rem);
   text-transform:lowercase;opacity:.8;margin-bottom:14px;
+  color: var(--dark);
 }
-.contact .display-xl{margin-bottom:50px}
+.contact .display-xl{margin-bottom:50px; }
+.display-xl{color: var(--dark);}
 .contact-info{margin-bottom:40px;display:flex;flex-direction:column;gap:14px;align-items:center;font-size:1.6rem}
 .contact-row{display:inline-flex;align-items:center;gap:10px}
-.contact-row .ic{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;background:var(--lightpurple);border-radius:50%;font-size:1.4rem}
-.contact-row a{border-bottom:1px solid var(--yellow);padding-bottom:2px}
-.contact-row a:hover{color:var(--yellow)}
+.contact-row .ic{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;background:var(--dark);border-radius:50%;font-size:1.4rem}
+.contact-row a{border-bottom:1px solid var(--dark);padding-bottom:2px}
 .muted{opacity:.5}
 
 .socials{
   list-style:none;display:flex;justify-content:center;gap:30px;
-  margin-top:50px;flex-wrap:wrap;
+  flex-wrap:wrap;
 }
 .socials a{
   font-size:1.2rem;font-weight:700;text-transform:uppercase;
   letter-spacing:.08em;padding:14px 22px 12px;
-  border:1.5px solid var(--lightgrey);border-radius:8px;
+  border:1.5px solid var(--dark);border-radius:8px;
   transform:skew(-12deg);display:inline-block;
   transition:background .3s ease,color .3s ease,transform .35s var(--back);
   margin-bottom: 20px !important;
+  color: var(--dark);
 }
 .socials a:hover{background:var(--yellow);color:var(--darkink);border-color:var(--yellow);transform:skew(-12deg) translateY(-3px)}
 
